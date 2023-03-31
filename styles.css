@@ -1,0 +1,107 @@
+body{
+  background: black;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+}
+
+.panelControl{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Condensed';
+  background: rgb(1, 7, 4);
+  width: 100%;
+}
+
+.counter{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  border-radius: 0px 0px 30px 30px;
+
+  background-image: url("./img/panel.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#speedometer{
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  color: white;
+  margin-top: 370px;
+  background: #7c711b;
+  height: 100px;
+  width: 220px;
+  text-align: center;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.counter div section{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.pedales{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 20px 0px 20px 0px;
+}
+
+.divFreno{
+  display: flex;
+  align-items: flex-end;
+}
+
+.frenoSVG{
+  height: 100px;
+  width: 150px;
+}
+
+.aceleradorSVG{
+  height: 200px;
+  width: 100px;
+}
+
+.iconSpeed{
+  height: 50px;
+}
+
+.btnStyle{
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 26px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.btnStart{
+  height: 120px;
+}
+
+#myButton{
+  background: black;
+  border: none;
+  cursor: pointer;
+}
+
+#tailLightL{
+  background: black;
+  width: 15px;
+  height: 140vh;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#tailLightR{
+  background: black;
+  width: 20px;
+  height: 140vh;
+  border-radius: 0px 20px 20px 0px;
+}

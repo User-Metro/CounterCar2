@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Contador</title>
+</head>
+<body>
+  
+  <main>
+    <div id="audios">
+      <audio id="encendido">
+        <source src="./audio/encendido.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="acelerando">
+        <source src="./audio/acelerando.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="frenando">
+        <source src="./audio/frenos.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    
+    <div id="tailLightL"></div>
+
+    <div class="panelControl">
+      <div class="counter">
+        <div id="speedometer">
+          <img src="./img/icon.jpg" alt="icono de velocidad" class="iconSpeed">
+          <section>
+            <span id="speed">0</span> km/h
+          </section>
+        </div>
+      </div>
+
+      <div class="pedales">
+        <div class="divFreno">
+          <button 
+            id="btn-decrease" 
+            class="btnStyle" 
+            onmousedown="startDecrement()" onmouseup="stopDecrement()"
+          >
+            <img 
+              src="./img/freno.png" 
+              alt="freno" 
+              class="frenoSVG"
+            >
+          </button>
+        </div>
+
+        <div>
+          <button 
+            id="btn-increase" 
+            class="btnStyle" 
+            onmousedown="startIncrement()" onmouseup="stopIncrement()"
+          >
+            <img 
+              src="./img/acelerador.png" 
+              alt="acelerador" 
+              class="aceleradorSVG"
+            >
+          </button>
+        </div>
+
+        <div>
+          <button id="myButton">
+            <img src="./img/btnStart.png" alt="botón de encendido" class="btnStart">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tailLightR"></div>
+  </main>
+
+</body>
+
+<script src="./funtions.js"></script>
+
+</html>
