@@ -1,107 +1,121 @@
 body{
-  background: black;
+  background: rgb(12, 26, 36);
 }
 
 main{
   display: flex;
-  flex-direction: row;
-}
-
-.panelControl{
-  display: flex;
   flex-direction: column;
-  font-family: 'Roboto Condensed';
-  background: rgb(1, 7, 4);
-  width: 100%;
-}
-
-.counter{
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  border-radius: 0px 0px 30px 30px;
-
-  background-image: url("./img/panel.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#speedometer{
-  display: flex;
-  position: relative;
-  justify-content: space-evenly;
-  color: white;
-  margin-top: 370px;
-  background: #7c711b;
-  height: 100px;
-  width: 220px;
-  text-align: center;
-  border-radius: 30px;
-  align-items: center;
-}
-
-.counter div section{
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.pedales{
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  padding: 20px 0px 20px 0px;
-}
-
-.divFreno{
-  display: flex;
-  align-items: flex-end;
 }
 
 .frenoSVG{
-  height: 100px;
   width: 150px;
 }
 
 .aceleradorSVG{
-  height: 200px;
-  width: 100px;
+  height: 150px;
 }
 
 .iconSpeed{
+  height: 40px;
+}
+
+.runaway{
+  display: flex;
+  justify-content: center;
+}
+
+.runaway video{
+  width: 80%;
+  border-radius: 60px;
+}
+
+#tablero{
+  width: 85%;
+  height: 300px;
+  background: rgb(19, 14, 14);
+  position: relative;
+  margin-top: -150px;
+  margin-left: 80px;
+  border-radius: 200px 200px 0px 0px;
+  padding: 15px;
+}
+
+.panel{
+  width: 100%;
+  height: 300px;
+  background: black;
+  border-radius: 200px 200px 0px 0px;
+  justify-content: center;
+  display: flex;
+}
+
+.counter{
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/tablero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 60%;
+  height: auto;
+  border-radius: 260px 260px 0px 0px;
+}
+
+#speedometer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  background: #7c711b;
   height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  margin-top: 170px;
 }
 
 .btnStyle{
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 26px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
+  background: black;
+  border: none;
+}
+
+.btnL{
+  margin-top: 200px;
+}
+
+.btnR{
+  margin-top: 140px;
 }
 
 .btnStart{
-  height: 120px;
+  height: 80px;
 }
 
 #myButton{
-  background: black;
   border: none;
   cursor: pointer;
+  border-radius: 40px;
+  margin: 20px 0px 0px -150px;
+  position: absolute;
 }
 
-#tailLightL{
-  background: black;
-  width: 15px;
-  height: 140vh;
-  border-radius: 20px 0px 0px 20px;
+.counter div section{
+  font-size: 25px;
+  font-weight: bold;
 }
 
-#tailLightR{
-  background: black;
-  width: 20px;
-  height: 140vh;
-  border-radius: 0px 20px 20px 0px;
+.glass{
+  position: absolute;
+  height: 405px;
+  width: 79%;
+  margin-left: 128px;
+  margin-top: 100px;
+  
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1px);
+-webkit-backdrop-filter: blur(1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
