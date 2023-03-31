@@ -13,15 +13,18 @@ const button2 = document.getElementById("btn-increase");
 const audio3 = document.getElementById("frenando");
 const button3 = document.getElementById("btn-decrease");
 
+const video = document.getElementById("runaway");
+
 button.addEventListener("click", function () {
   audio.play();
   document.getElementById("speedometer").style.background = "#ffa300";
-  document.getElementById("tailLightR").style.background = "#ffa300";
-  document.getElementById("tailLightL").style.background = "#ffa300";
+  document.getElementById("tablero").style.background = "#ffa300";
+  document.getElementById("tablero").style.background = "#ffa300";
 });
 
 button2.onclick = () => {
   audio2.play();
+  video.play();
 };
 
 button3.onclick = () => {
@@ -43,8 +46,8 @@ function stopIncrement() {
 }
 
 function startDecrement() {
-  document.getElementById("tailLightR").style.background = "#ff0534";
-  document.getElementById("tailLightL").style.background = "#ff0534";
+  document.getElementById("tablero").style.background = "#ff0534";
+  document.getElementById("tablero").style.background = "#ff0534";
 
   intervalId = setInterval(function () {
     if (counter > 0) {
@@ -56,6 +59,6 @@ function startDecrement() {
 
 function stopDecrement() {
   clearInterval(intervalId);
-  document.getElementById("tailLightR").style.background = "#ffa300";
-  document.getElementById("tailLightL").style.background = "#ffa300";
+  document.getElementById("tablero").style.background = "#ffa300";
+  document.getElementById("tablero").style.background = "#ffa300";
 }

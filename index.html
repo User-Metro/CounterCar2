@@ -29,21 +29,17 @@
         <source src="./audio/frenos.mp3" type="audio/mp3">
       </audio>
     </div>
-    
-    <div id="tailLightL"></div>
 
-    <div class="panelControl">
-      <div class="counter">
-        <div id="speedometer">
-          <img src="./img/icon.jpg" alt="icono de velocidad" class="iconSpeed">
-          <section>
-            <span id="speed">0</span> km/h
-          </section>
-        </div>
-      </div>
+    <div class="runaway">
+      <video id="runaway" src="./video/ricky.mp4" loop></video>
+    </div>
 
-      <div class="pedales">
-        <div class="divFreno">
+    <div class="glass"></div>
+
+    <div id="tablero">
+      <div class="panel">
+
+        <div class="btnL">
           <button 
             id="btn-decrease" 
             class="btnStyle" 
@@ -57,7 +53,16 @@
           </button>
         </div>
 
-        <div>
+        <div class="counter">
+          <div id="speedometer">
+            <img src="./img/icon.jpg" alt="icono de velocidad" class="iconSpeed">
+            <section>
+              <span id="speed">0</span> km/h
+            </section>
+          </div>
+        </div>
+
+        <div class="btnR">
           <button 
             id="btn-increase" 
             class="btnStyle" 
@@ -71,15 +76,15 @@
           </button>
         </div>
 
-        <div>
+        <div class="divStar">
           <button id="myButton">
             <img src="./img/btnStart.png" alt="botón de encendido" class="btnStart">
           </button>
         </div>
+       
       </div>
     </div>
-
-    <div id="tailLightR"></div>
+    
   </main>
 
 </body>
