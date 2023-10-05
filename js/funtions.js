@@ -18,13 +18,13 @@ const video           = document.getElementById("runaway");
 button.addEventListener("click", function () {
   audio.play();
   document.getElementById("speedometer").style.background = "#ffa300";
-  document.getElementById("tablero").style.background = "#ffa300";
-  document.getElementById("tablero").style.background = "#ffa300";
+  document.getElementById("tablero")    .style.background = "#ffa300";
+  document.getElementById("tablero")    .style.background = "#ffa300";
 });
 
 button2.onclick = () => {
   audio2.play();
-  video.play();
+  video .play();
 };
 
 button3.onclick = () => {
