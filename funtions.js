@@ -1,19 +1,19 @@
 let intervalId;
 let counter = 0;
-var limit = 250;
+var limit   = 250;
 
-const counterElement = document.getElementById("speed");
+const counterElement  = document.getElementById("speed");
 
-const audio = document.getElementById("encendido");
-const button = document.getElementById("myButton");
+const audio           = document.getElementById("encendido");
+const button          = document.getElementById("myButton");
 
-const audio2 = document.getElementById("acelerando");
-const button2 = document.getElementById("btn-increase");
+const audio2          = document.getElementById("acelerando");
+const button2         = document.getElementById("btn-increase");
 
-const audio3 = document.getElementById("frenando");
-const button3 = document.getElementById("btn-decrease");
+const audio3          = document.getElementById("frenando");
+const button3         = document.getElementById("btn-decrease");
 
-const video = document.getElementById("runaway");
+const video           = document.getElementById("runaway");
 
 button.addEventListener("click", function () {
   audio.play();
