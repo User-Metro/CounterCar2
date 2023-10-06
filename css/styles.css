@@ -16,7 +16,7 @@ main{
 }
 
 .iconSpeed{
-  height: 40px;
+  height: 60px;
 }
 
 .runaway{
@@ -56,9 +56,10 @@ main{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 60%;
+  width: 70%;
   height: auto;
   border-radius: 260px 260px 0px 0px;
+  margin-right: 60px;
 }
 
 #speedometer{
@@ -67,8 +68,8 @@ main{
   justify-content: space-around;
   color: white;
   background: #7c711b;
-  height: 50px;
-  width: 150px;
+  height: 80px;
+  width: 200px;
   border-radius: 30px;
   margin-top: 170px;
 }
@@ -87,6 +88,10 @@ main{
   margin-top: 140px;
 }
 
+.divStar{
+  margin: 10px 20px 0px 0px;
+}
+
 .btnStart{
   height: 80px;
 }
@@ -100,7 +105,7 @@ main{
 }
 
 .counter div section{
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
 }
 
